@@ -3,14 +3,7 @@ import Note from './components/Note'
 import Notification from './components/Notification'
 import Footer from './components/Footer'
 import noteService from './services/notes'
-import axios from 'axios'
 
-const baseUrl = '/api/notes'
-
-const getAll = () => {
-  const request = axios.get(baseUrl)
-  return request.then(response => response.data)
-}
 
 
 const App = () => {
